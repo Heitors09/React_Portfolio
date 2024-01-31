@@ -1,28 +1,8 @@
-import { useEffect } from "react";
-import { useState } from "react";
 import { ProfileContext } from "./ProfileContext";
+import { useProfileGet } from "./useProfileGet";
 
 export function ProfileProvider({ children }) {
-  const [profile, setprofile] = useState({});
-
-  useEffect(() => {
-    let ignore = false;
-
-    async function ProfileGet() {
-      const data = await fetch("https://api.github.com/users/Heitors09");
-      const json = await data.json();
-
-      if (!ignore) {
-        setprofile(json);
-      }
-    }
-
-    ProfileGet();
-
-    return () => {
-      ignore = true;
-    };
-  }, []);
+  const profile = useProfileGet();
 
   return (
     <ProfileContext.Provider value={profile}>
