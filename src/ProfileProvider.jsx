@@ -1,9 +1,9 @@
 import { ProfileContext } from "./ProfileContext";
-import { useProfileGet } from "./useProfileGet";
+import { useDataGet } from "./useDataGet";
 
 export function ProfileProvider({ children }) {
-  const profile = useProfileGet();
-
+  const profile = useDataGet("https://api.github.com/users/Heitors09");
+  console.log(profile);
   return (
     <ProfileContext.Provider value={profile}>
       {children}
