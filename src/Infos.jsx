@@ -1,7 +1,7 @@
 export function Infos() {
   return (
-    <>
-      <div className="bg-bgcolor drop-shadow-default rounded-md w-80 h-72 flex  flex-col mb-[40px]">
+    <div>
+      <div className="bg-bgcolor drop-shadow-default rounded-md w-80 h-72 flex  flex-col mb-[40px] grid-span-1">
         <ul className="flex flex-col ml-11 mt-8 gap-7 font-merri text-boxTxColor font-semibold text-base">
           <li className="flex gap-4">
             <svg
@@ -119,6 +119,6 @@ export function Infos() {
           </li>
         </ul>
       </div>
-    </>
+    </div>
   );
 }

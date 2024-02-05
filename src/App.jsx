@@ -1,17 +1,19 @@
 import "./App.css";
 import { ProfileProvider } from "./ProfileProvider";
 import { ProfileShow } from "./ProfileShow";
-import { Infos } from "./Infos";
 import { ProjectsShow } from "./ProjectsShow";
+import { Infos } from "./Infos";
 
 function App() {
   return (
     <>
       <ProfileProvider>
-        <ProfileShow />
+        <div>
+          <ProfileShow />
+          <Infos />
+        </div>
         <ProjectsShow />
       </ProfileProvider>
-      <Infos />
     </>
   );
 }
