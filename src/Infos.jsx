@@ -1,7 +1,7 @@
 export function Infos() {
   return (
     <>
-      <div className="bg-bgcolor drop-shadow-default rounded-md w-80 h-72 flex  flex-col  m-default">
+      <div className="bg-bgcolor drop-shadow-default rounded-md w-80 h-72 flex  flex-col mb-[40px]">
         <ul className="flex flex-col ml-11 mt-8 gap-7 font-merri text-boxTxColor font-semibold text-base">
           <li className="flex gap-4">
             <svg
@@ -94,13 +94,29 @@ export function Infos() {
           </li>
         </ul>
       </div>
-      <div className="bg-bgcolor drop-shadow-default rounded-md w-80 h-72 flex  flex-col  m-default">
-        <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JAVASCRIPT</li>
-          <li>REACT</li>
-          <li>TAILWIND</li>
+      <div className="bg-bgcolor drop-shadow-default rounded-md w-80 h-72 flex  flex-col">
+        <ul className="flex flex-wrap ml-5 mt-8 gap-4 font-merri text-white font-semibold text-xs">
+          <li className="bg-green-500 w-20 h-6 rounded-full flex items-center justify-center">
+            HTML
+          </li>
+          <li className="bg-green-500 w-20 h-6 rounded-full flex items-center justify-center">
+            CSS
+          </li>
+          <li className="bg-green-500 w-20 h-6 rounded-full flex items-center justify-center">
+            JAVASCRIPT
+          </li>
+          <li className="bg-green-500 w-20 h-6 rounded-full flex items-center justify-center">
+            REACT
+          </li>
+          <li className="bg-green-500 w-20 h-6 rounded-full flex items-center justify-center">
+            TAILWIND
+          </li>
+          <li className="bg-green-500 w-20 h-6 rounded-full flex items-center justify-center">
+            GIT
+          </li>
+          <li className="bg-green-500 w-20 h-6 rounded-full flex items-center justify-center">
+            GITHUB
+          </li>
         </ul>
       </div>
     </>

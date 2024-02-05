@@ -19,6 +19,9 @@ export default {
       fontFamily: {
         merri: ["Merriweather Sans", "sans-serif"],
       },
+      gridTemplateColumns: {
+        default: "2fr  7fr",
+      },
     },
   },
   plugins: [],

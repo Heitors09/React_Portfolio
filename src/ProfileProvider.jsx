@@ -7,8 +7,8 @@ export function ProfileProvider({ children }) {
   console.log(profile);
   console.log(projects);
   return (
-    <ProfileContext.Provider value={profile}>
-      {children}
+    <ProfileContext.Provider value={{ profile, projects }}>
+      <div className="grid grid-cols-default grid gap-5">{children}</div>
     </ProfileContext.Provider>
   );
 }
