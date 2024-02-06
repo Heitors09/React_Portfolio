@@ -17,10 +17,7 @@ export default {
         boxTxColor: "#837E9F",
       },
       fontFamily: {
-        merri: ["Merriweather Sans", "sans-serif"],
-      },
-      gridTemplateColumns: {
-        default: "2fr  7fr",
+        Merriweather: "Merriweather Sans",
       },
     },
   },

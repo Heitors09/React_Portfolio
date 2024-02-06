@@ -1,7 +1,7 @@
 import { ProfileContext } from "./ProfileContext";
 import { useDataGet } from "./useDataGet";
 
-export function ProfileProvider({ children }) {
+export function DataProvider({ children }) {
   const profile = useDataGet("https://api.github.com/users/Heitors09");
   const projects = useDataGet("https://api.github.com/users/Heitors09/repos");
   const recent = useDataGet(
@@ -9,7 +9,7 @@ export function ProfileProvider({ children }) {
   );
   return (
     <ProfileContext.Provider value={{ profile, projects, recent }}>
-      <div className="grid grid-cols-default grid gap-5">{children}</div>
+      {children}
     </ProfileContext.Provider>
   );
 }

@@ -1,6 +1,24 @@
-export function Infos() {
+import { useContext } from "react";
+import { ProfileContext } from "./ProfileContext";
+
+export function ProfileShow() {
+  const infoProfile = useContext(ProfileContext);
+
   return (
     <div>
+      <div className="bg-bgcolor drop-shadow-default rounded-md w-80 h-72 flex items-center flex-col justify-center mb-[40px] ">
+        <img
+          src={infoProfile.profile.avatar_url}
+          alt=""
+          className="w-32 rounded-full border-2 border-green-500 border-solid"
+        />
+        <h2 className="text-boxTxColor font-bold mt-[20px] text-2xl ">
+          {infoProfile.profile.name}
+        </h2>
+        <footer className=" text-sm text-center text-boxTxColor font-medium mt-2 ">
+          {infoProfile.profile.bio}
+        </footer>
+      </div>
       <div className="bg-bgcolor drop-shadow-default rounded-md w-80 h-72 flex  flex-col mb-[40px] grid-span-1">
         <ul className="flex flex-col ml-11 mt-8 gap-7 font-merri text-boxTxColor font-semibold text-base">
           <li className="flex gap-4">

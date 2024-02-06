@@ -1,20 +1,16 @@
 import "./App.css";
-import { ProfileProvider } from "./ProfileProvider";
-import { ProfileShow } from "./ProfileShow";
-import { ProjectsShow } from "./ProjectsShow";
-import { Infos } from "./Infos";
+import { DataProvider } from "./components/DataProvider";
+import { ProfileShow } from "./components/ProfileShow";
+import { ProjectsShow } from "./components/ProjectsShow";
 
 function App() {
   return (
-    <>
-      <ProfileProvider>
-        <div>
-          <ProfileShow />
-          <Infos />
-        </div>
+    <DataProvider>
+      <div className="flex gap-5 font-Merriweather">
+        <ProfileShow />
         <ProjectsShow />
-      </ProfileProvider>
-    </>
+      </div>
+    </DataProvider>
   );
 }
 

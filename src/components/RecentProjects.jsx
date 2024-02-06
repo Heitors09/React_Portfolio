@@ -12,7 +12,7 @@ export function RecentProjects() {
           key={project.id}
           className="bg-bgcolor drop-shadow-default rounded-lg w-[411px] h-48 grid-span-2"
         >
-          <h1 className="flex font-merri font-bold gap-2 mt-4 ml-4 text-boxTxColor text-center">
+          <h1 className="flex  font-bold gap-2 mt-4 ml-4 text-boxTxColor text-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
