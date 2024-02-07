@@ -1,5 +1,5 @@
 import "./App.css";
-import { DataProvider } from "./components/DataProvider";
+import { DataProvider } from "./components/ProfileProvider";
 import { ProfileShow } from "./components/ProfileShow";
 import { ProjectsShow } from "./components/ProjectsShow";
 

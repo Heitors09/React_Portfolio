@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { ProfileContext } from "./ProfileContext";
+import { Github } from "lucide-react";
 
 export function ProfileShow() {
   const infoProfile = useContext(ProfileContext);
@@ -15,7 +16,7 @@ export function ProfileShow() {
         <h2 className="text-boxTxColor font-bold mt-[20px] text-2xl ">
           {infoProfile.profile.name}
         </h2>
-        <footer className=" text-sm text-center text-boxTxColor font-medium mt-2 ">
+        <footer className=" text-sm text-center text-boxTxColor p-2 font-medium mt-2 ">
           {infoProfile.profile.bio}
         </footer>
       </div>
@@ -114,25 +115,25 @@ export function ProfileShow() {
       </div>
       <div className="bg-bgcolor drop-shadow-default rounded-md w-80 h-72 flex  flex-col">
         <ul className="flex flex-wrap ml-5 mt-8 gap-4 font-merri text-white font-semibold text-xs">
-          <li className="bg-green-500 w-20 h-6 rounded-full flex items-center justify-center">
+          <li className="bg-gray-900 hover:bg-green-500 cursor-pointer w-20 h-7 rounded-full flex items-center justify-center">
             HTML
           </li>
-          <li className="bg-green-500 w-20 h-6 rounded-full flex items-center justify-center">
+          <li className="bg-gray-900  hover:bg-green-500 cursor-pointer w-20 h-7 rounded-full flex items-center justify-center">
             CSS
           </li>
-          <li className="bg-green-500 w-20 h-6 rounded-full flex items-center justify-center">
+          <li className="bg-gray-900   hover:bg-green-500 cursor-pointer w-20 h-7 rounded-full flex items-center justify-center ">
             JAVASCRIPT
           </li>
-          <li className="bg-green-500 w-20 h-6 rounded-full flex items-center justify-center">
+          <li className="bg-gray-900   hover:bg-green-500 cursor-pointer w-20 h-7 rounded-full flex items-center justify-center">
             REACT
           </li>
-          <li className="bg-green-500 w-20 h-6 rounded-full flex items-center justify-center">
+          <li className="bg-gray-900   hover:bg-green-500 cursor-pointer w-20 h-7 rounded-full flex items-center justify-center">
             TAILWIND
           </li>
-          <li className="bg-green-500 w-20 h-6 rounded-full flex items-center justify-center">
+          <li className="bg-gray-900   hover:bg-green-500 cursor-pointer w-20 h-7 rounded-full flex items-center justify-center">
             GIT
           </li>
-          <li className="bg-green-500 w-20 h-6 rounded-full flex items-center justify-center">
+          <li className="bg-gray-900   hover:bg-green-500 cursor-pointer w-20 h-7 rounded-full flex items-center justify-center">
             GITHUB
           </li>
         </ul>
