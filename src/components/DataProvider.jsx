@@ -1,5 +1,5 @@
-import { ProfileContext } from "./ProfileContext";
-import { useDataGet } from "./useDataGet";
+import { ProfileContext } from "./Context/ProfileContext";
+import { useDataGet } from "./Hooks/useDataGet";
 
 export function DataProvider({ children }) {
   const profile = useDataGet("https://api.github.com/users/Heitors09");
